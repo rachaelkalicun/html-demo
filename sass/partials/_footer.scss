@@ -1,0 +1,25 @@
+#footer-wrapper {
+  color: #999999;
+  border-top: 2px solid #d1dbe9;
+  padding: 22px 0;
+  #footer-nav {
+    list-style: none;
+    float: right;
+    text-align: right;
+    width: 70%;
+    margin-right: 1.923076923076923em; /*25px/13px*/
+    li {
+      display: inline;
+      margin-left: 2.769230769230769em; /*36px/13px*/
+      a {
+        text-decoration: none;
+        &.current {
+          color: #525252;
+        }
+      }
+    }   
+  }
+  #copyright {
+    font-size: 1.076923076923077em; /*14px/13px*/
+  }
+}

@@ -1,0 +1,15 @@
+#header-inner, #content, #footer-inner {
+  max-width: 960px;/*let's make this layout flexible*/
+  margin: 0 auto;
+  padding: 0 10px;/*some padding when the viewport gets small*/
+}
+
+#main {
+  width: 67.7083333333333%; /*650px/960px*/
+  float: left;
+}
+
+#sidebar {
+  width: 31.25%; /*300px/960px*/
+  float: right;
+}

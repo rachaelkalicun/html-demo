@@ -1,0 +1,35 @@
+#header-wrapper {
+  background: $navbg;
+  padding: 16px 0 12px;
+  #header-inner {
+    @include pie-clearfix;
+    h1 {
+      color: $light;
+      float: left;
+    }
+    #main-nav {
+      list-style: none;
+      float: right;
+      text-align: right;
+      margin: 20px 0.615384615384615em 0 0; /*8px/13px*/
+      li {
+        display: inline;
+        margin-right: 0.307692307692308em; /*4px/13px*/
+        a {
+          font-size: 1em; /*13px/13px*/
+          color: $light;
+          text-decoration: none;
+          background: #15355d;
+          padding: 7px 16px; 
+          @include border-radius(6px);
+          &:hover, &.current {
+            background: #5578a4;
+          }
+        }
+        &:last-child  {
+          margin-right: 0;
+        }
+      }   
+    }
+  }
+}

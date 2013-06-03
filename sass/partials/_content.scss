@@ -1,0 +1,64 @@
+#content-wrapper {
+  background: #f0f4f9;
+  padding: 52px 0 79px;
+  #content {
+    @include pie-clearfix;
+    #intro {
+      margin-bottom: 36px; 
+    }
+    .service {
+      margin-bottom: 18px;
+      .service-description {
+        padding-left: 6.1538461538462%; /*40px/650px*/
+      }
+    }
+    #sidebar {
+      .callout {
+        background: #e2ecfa; 
+        padding: 6.6666666666667%; /*20px/300px*/
+        @include border-radius(15px);
+        margin-bottom: 10px;
+        h4 {
+          font-size: 1.230769230769231em; /*16px/13px*/
+          font-weight: normal;
+        }
+      }
+      .newsletter-signup {
+        margin-top: 28px;
+        fieldset {
+          border: 1px solid #cccccc;
+          @include border-radius(7px);
+          padding: 4.3333333333333%; /*13px/300px*/
+          legend {
+            font-size: 1.153846153846154em; /*15px/13px*/
+            font-weight: bold;
+            margin-left: 2.3333333333333%; /*7px/300px*/
+            padding: 0 2px;
+          }
+          input[type="text"], input[type="submit"] {
+            width: 100%;
+          } 
+          input[type="text"] {
+            border: 1px solid #cccccc;
+            @include border-radius(7px);
+            font-size: 1em;
+            padding: 8px 0;
+          }
+          input[type="submit"] {
+            background: #466eb0;
+            border: 0;
+            @include border-radius(7px);
+            color: white;
+            font: 1.230769230769231em Georgia, Times, "Times New Roman", serif; /*16px/13px*/
+            padding: 12px 0;
+            margin-top: 11px;
+            cursor: pointer;
+            &:hover {
+              background: darken(#466eb0, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
