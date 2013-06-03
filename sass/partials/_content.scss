@@ -35,14 +35,15 @@
             margin-left: 2.3333333333333%; /*7px/300px*/
             padding: 0 2px;
           }
-          input[type="text"], input[type="submit"] {
+          input[type="submit"] {
             width: 100%;
           } 
           input[type="text"] {
+            width: 94%;
             border: 1px solid #cccccc;
             @include border-radius(7px);
             font-size: 1em;
-            padding: 8px 0;
+            padding: 8px;
           }
           input[type="submit"] {
             background: #466eb0;
